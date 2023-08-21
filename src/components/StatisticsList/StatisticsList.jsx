@@ -4,7 +4,6 @@ import { List } from './StatisticsList.styled';
 import { ListItem } from './StatisticsList.styled';
 
 export const StatisticsList = ({ data }) => {
-const arrLabels = [];
   return (
     <List>
       {data.map(({ id, label, percentage }) => (
