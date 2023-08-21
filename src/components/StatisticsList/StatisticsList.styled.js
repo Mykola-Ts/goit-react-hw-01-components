@@ -6,7 +6,7 @@ export const List = styled.ul`
 
 let backgroundColorItems = '';
 
-for (let i = 0; i <= 5; i += 1) {
+for (let i = 0; i < 5; i += 1) {
   backgroundColorItems += `&:nth-child(${
     i + 1
   }) {background-color: ${getRandomHexColor()}};`;
@@ -18,7 +18,7 @@ export const ListItem = styled.li`
   align-items: center;
   gap: 8px;
 
-  width: calc(100% / 5);
+  width: calc(100% / 4);
   border: 1px solid rgb(228 228 228);
   padding: 20px 0;
 
