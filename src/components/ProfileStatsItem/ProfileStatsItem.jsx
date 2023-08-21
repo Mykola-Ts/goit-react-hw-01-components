@@ -1,7 +1,5 @@
+import { ListItem, Label, Quantity } from './ProfileStatsItem.styled';
 import PropTypes from 'prop-types';
-import { ListItem } from './ProfileStatsItem.styled';
-import { Label } from './ProfileStatsItem.styled';
-import { Quantity } from './ProfileStatsItem.styled';
 
 export const ProfileStatsItem = ({ title, quantity }) => {
   return (

@@ -1,13 +1,10 @@
+import { Wrapper, Avatar, Name, Info } from './ProfileDescr.styled';
 import PropTypes from 'prop-types';
-import { Wrapper } from './ProfileDescr.styled';
-import { Avatar } from './ProfileDescr.styled';
-import { Name } from './ProfileDescr.styled';
-import { Info } from './ProfileDescr.styled';
 
 export const ProfileDescr = ({ username, tag, location, avatar }) => {
   return (
     <Wrapper>
-      <Avatar src={avatar} alt="User avatar"/>
+      <Avatar src={avatar} alt="User avatar" />
       <Name>{username}</Name>
       <Info>@{tag}</Info>
       <Info>{location}</Info>

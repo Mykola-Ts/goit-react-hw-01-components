@@ -1,7 +1,6 @@
 import { StatisticsList } from 'components/StatisticsList/StatisticsList';
+import { Title, Section } from './Statistics.styled';
 import PropTypes from 'prop-types';
-import { Title } from './Statistics.styled';
-import { Section } from './Statistics.styled';
 
 export const Statistics = ({ title, data }) => {
   return (

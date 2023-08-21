@@ -1,7 +1,6 @@
 import { StatisticsListItem } from 'components/StatisticsListItem/StatisticsListItem';
+import { List, ListItem } from './StatisticsList.styled';
 import PropTypes from 'prop-types';
-import { List } from './StatisticsList.styled';
-import { ListItem } from './StatisticsList.styled';
 
 export const StatisticsList = ({ data }) => {
   return (
