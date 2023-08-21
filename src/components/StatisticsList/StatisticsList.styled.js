@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const List = styled.ul`
   display: flex;
+  flex-wrap: wrap;
 `;
 
 let backgroundColorItems = '';
@@ -18,11 +19,19 @@ export const ListItem = styled.li`
   align-items: center;
   gap: 8px;
 
-  width: calc(100% / 4);
+  width: calc(100% / 5);
   border: 1px solid rgb(228 228 228);
   padding: 20px 0;
 
   color: #fff;
+
+  &:first-child {
+    border-bottom-left-radius: 8px;
+  }
+
+  &:last-child {
+    border-bottom-right-radius: 8px;
+  }
 
   ${backgroundColorItems}
 `;
