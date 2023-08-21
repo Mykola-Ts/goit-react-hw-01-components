@@ -12,7 +12,6 @@ export const StatisticsList = ({ data }) => {
       data[id].percentage += data[i].percentage;
 
       data.splice(i, 1);
-      return;
     } else {
       labels.push(data[i].label);
     }
