@@ -4,6 +4,14 @@ export const List = styled.ul`
   display: flex;
 `;
 
+let backgroundColorItems = '';
+
+for (let i = 0; i <= 5; i += 1) {
+  backgroundColorItems += `&:nth-child(${
+    i + 1
+  }) {background-color: ${getRandomHexColor()}};`;
+}
+
 export const ListItem = styled.li`
   display: flex;
   flex-direction: column;
@@ -14,5 +22,13 @@ export const ListItem = styled.li`
   border: 1px solid rgb(228 228 228);
   padding: 20px 0;
 
-  background-color: rgb(242 242 242);
+  color: #fff;
+
+  ${backgroundColorItems}
 `;
+
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}
